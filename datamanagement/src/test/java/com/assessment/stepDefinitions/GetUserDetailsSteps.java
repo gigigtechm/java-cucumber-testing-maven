@@ -40,7 +40,7 @@ public class GetUserDetailsSteps {
     assertEquals(statusCode, response.getStatusCode());
   }
 
-  @And("the respose body is displaying the following details:")
+  @And("the respose body is displaying the following details")
   public void validateResponseBody() throws Exception {
     ObjectMapper mapper = new ObjectMapper();
     Map<String, Object> expectedResponseValues = mapper

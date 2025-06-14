@@ -4,7 +4,7 @@ Feature: Retrieve User Details by Id
     Given the API end point is "api/users/<userId>"
     When I send a GET request
     Then the response status code should be 200
-    And the respose body is displaying the following details:
+    And the respose body is displaying the following details
       | id | email | first_name | last_name | avatar | url | text |
 
     Examples:

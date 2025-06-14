@@ -1,1 +1,0 @@
-# java-cucumber-testing-maven
