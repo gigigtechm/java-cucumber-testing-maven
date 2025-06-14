@@ -7,6 +7,6 @@ Feature: Retrieve User Details by Id
     And the respose body is displaying the following details:
       | id | email | first_name | last_name | avatar | url | text |
 
-  Examples:
-| userId |
-| 2      |
+    Examples:
+      | userId |
+      |      2 |

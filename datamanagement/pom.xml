@@ -108,26 +108,6 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
-        <plugin>
-    <groupId>com.hubspot.maven.plugins</groupId>
-    <artifactId>prettier-maven-plugin</artifactId>
-    <version>0.16</version>
-    <configuration>
-        <printWidth>90</printWidth>
-        <tabWidth>2</tabWidth>
-        <useTabs>false</useTabs>
-        <ignoreConfigFile>true</ignoreConfigFile>
-        <ignoreEditorConfig>true</ignoreEditorConfig>
-    </configuration>
-    <executions>
-        <execution>
-            <phase>validate</phase>
-            <goals>
-                <goal>write</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
       </plugins>
     </pluginManagement>
   </build>
