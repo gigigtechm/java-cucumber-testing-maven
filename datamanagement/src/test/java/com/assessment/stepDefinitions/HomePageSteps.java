@@ -28,9 +28,9 @@ public class HomePageSteps {
 
     @Then("User scrolls to API lists section")
     public void validateApiListSection() {
-        WebElement apiList = driver.findElement(By.id("console"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", apiList);
-
+        WebElement apiListSection = driver.findElement(By.id("console"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", apiListSection);
+        assertTrue(apiListSection.isDisplayed(), " Api list section should be visible");
     }
 
     @And("Check that the list item 'GET LIST USERS' is selected by default")
@@ -46,7 +46,6 @@ public class HomePageSteps {
     public void clickOnDeleteItem() {
         WebElement deleteListItem = driver.findElement(By.cssSelector("[data-id=\"delete\"]"));
         deleteListItem.click();
-
     }
 
     @And("Check that the Request and Response of 'DELETE' list item is displayed")
